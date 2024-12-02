@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const addUrlsButton = document.getElementById('add-urls');
     const previewContainer = document.getElementById('preview-container');
 
+    
     addUrlsButton.addEventListener('click', () => {
         const urls = imageUrlsTextArea.value
-            .split(/[\n,]/)  // Split by new lines or commas
+            .split(/[\n,]/)            // Split by new lines or commas
             .map(url => url.trim())
             .filter(url => url !== ''); // Remove any empty strings
 
